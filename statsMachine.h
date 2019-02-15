@@ -5,5 +5,6 @@ namespace hw1 {
   class statsMachine{
   public:
     double calcVariance(string filepath, float mean, int numLines);
+    double getNormalRandom(float mean, float std);
   };
 }

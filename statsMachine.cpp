@@ -25,3 +25,9 @@ double statsMachine::calcVariance(string filepath, float mean, int numLines){
   cout << "Num lines: " << numLines << endl;
   return totalSquares/float(numLines-1);
 }
+
+double statsMachine::getNormalRandom(float mean, float std){
+   double a = double(rand())/RAND_MAX, b = double(rand())/RAND_MAX;
+   double c = sqrt(-2*log(a))*cos(2*M_PI*b);
+   return std*c + mean;
+}
