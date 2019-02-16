@@ -264,8 +264,14 @@ while(running){
     cout << "Lines written to jacksavage.out" << endl;
     cout << "Would you like to quit(y/*)? ";
     cin >> user_input;
-    cout << endl;
-    if (user_input == "y" || user_input == "Y")
+
+    if (user_input == "y" || user_input == "Y"){
       running = false;
     }
+
+    else {
+      cout << "Enter new file to read: ";
+      cin >> filepath;
+    }
+  }
 }

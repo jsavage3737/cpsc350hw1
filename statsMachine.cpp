@@ -21,8 +21,6 @@ double statsMachine::calcVariance(string filepath, float mean, int numLines){
     difference = pow(difference,2);
     totalSquares += difference;
   }
-  cout << "Total Squares:" << totalSquares << endl;
-  cout << "Num lines: " << numLines << endl;
   return totalSquares/float(numLines-1);
 }
 
